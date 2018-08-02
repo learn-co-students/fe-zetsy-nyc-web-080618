@@ -1,13 +1,18 @@
 /*////////////// Fonts //////////////*/
 
 /* link the web font used for the level 1 heading here */
+@font-face {
+	font-family: 'Baskerville';
+	src: url(../fonts/Baskerville.ttc);
+}
+
 
 /*////////// Global Styles //////////*/
 
 body {
 	background: #F3EBE9;
 	font-size: 100%;
-	font-family: 'Times New Roman', serif; 
+	font-family: 'Times New Roman', serif;
 }
 
 .wrapper {
@@ -17,4 +22,90 @@ body {
 	padding: 0 45px 20px;
 }
 
+h1 {
+	color: rgba(156,173,167,1);
+	width: 960px;
+	font-size: 5em;
+	font-family: 'Baskerville', serif;
+	border-bottom: 1px solid rgba(223,223,223,1);
+	padding-bottom: 10px;
+	margin:0 0 5px;
+}
+
+h2 {
+	color: rgb(111,127,122);
+}
+
+p {
+	color: #555;
+	margin:0 0 20px 0;
+}
+
+.small {
+	font-size: 0.8em;
+}
+
 /* Write all remaining styles here */
+/*/// featured image style////*/
+#featured-image img {
+
+	max-width: 100%;
+	border: 4px solid rgba(156,173,167,1);
+}
+
+#press {
+
+	margin-bottom: 20px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.col-3 img{
+  width: 24.625%;
+	float: left;
+  background-color: blue;
+	border: 5px #ccc solid;
+}
+
+
+[class*="col-"] img{
+	margin-left: 0.5%;
+}
+
+.first img{
+	margin-left: 0%;
+}
+
+.clearfix:after {
+	content:".";
+	display:block;
+	clear:both;
+	visibility: hidden;
+	height: 0;
+	line-height: 0;
+}
+
+footer {
+	text-align: right;
+	background: #fff;
+}
+
+/*// mouse hover event///*/
+#featured-image a:link{
+	text-decoration: none;
+}
+#featured-image a:hover{
+	text-decoration: underline;
+}
+
+#featured-image a:visited{
+	color:purple;
+}
+
+.col-3 img:hover {
+	border: 5px violet solid;
+}
